@@ -107,7 +107,7 @@ function getTime() {
 }
 
 function aboutMe() {
-	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Mario, a Digital Developer working [@wearecollider](http://www.wearecollider.com) during the day and a designer, freerider, pcbuilder, droneracer and science lover on my free time.', 'Fell free to follow me on twitter @MDesignsuk - see contact page.'];
+	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Abdi, a dropout student and a self taught programmer, I do generative art full-time.', 'Fell free to follow me on twitter @ReformerEth - see contact page.'];
 	seperator();
 	for (var i = 0; i < aboutMeArray.length; i++) {
 		var out = '<span>' + aboutMeArray[i] + '</span><br/>'
@@ -117,7 +117,7 @@ function aboutMe() {
 }
 
 function contactMe() {
-	var contactArray = ['>Contact:', '[GitHub](https://github.com/Mario-Duarte)', '[BitBucket](https://bitbucket.org/Mario_Duarte/)', '[CodePen](https://codepen.io/MarioDesigns/)', '[Twitter](https://twitter.com/MDesignsuk)'];
+	var contactArray = ['>Contact:', '[Fxhash](https://www.fxhash.xyz/u/Abdi)', '[Objkt](https://objkt.com/profile/reformer)', '[Twitter](https://twitter.com/MDesignsuk)'];
 	seperator();
 	for (var i = 0; i < contactArray.length; i++) {
 		var out = '<span>' + contactArray[i] + '</span><br/>'
