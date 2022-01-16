@@ -8,7 +8,7 @@ var toOutput;
 // Creates the event listner for the comands ==
 // Yes this is a long one - could do with some
 // improvements ===============================
-input.keypress(function(e) {
+input.keypress(function (e) {
 	if (e.which == 13) {
 		var inputVal = $.trim(input.val());
 		//console.log(inputVal);
@@ -44,7 +44,7 @@ input.keypress(function(e) {
 			input.val('');
 		} else if (inputVal.startsWith("exit") === true) {
 			Output('<span class="blue">Goodbye! Comeback soon.</span>');
-			setTimeout(function() {
+			setTimeout(function () {
 				window.open('https://codepen.io/MarioDesigns');
 			}, 1000);
 		} else {
@@ -56,6 +56,13 @@ input.keypress(function(e) {
 
 // functions related to the commands typed
 // =======================================
+
+//Links
+const fxhash = `<a href="https://www.fxhash.xyz/u/Abdi" target="_blank" >https://www.fxhash.xyz/u/Abdi</a>`;
+const twitter = `<a href="https://twitter.com/ReformerEth" target="_blank" >https://twitter.com/ReformerEth</a>`;
+const objkt = `<a href="https://objkt.com/profile/reformer" target="_blank" >https://objkt.com/profile/reformer</a>`;
+
+const aboutMeTwitter = `<a href="https://twitter.com/ReformerEth" target="_blank">@ReformerEth</a>`;
 
 // prints out a seperator
 function seperator() {
@@ -107,7 +114,7 @@ function getTime() {
 }
 
 function aboutMe() {
-	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Abdi, a dropout student and a self taught programmer, I do generative art full-time.', 'Fell free to follow me on twitter @ReformerEth - see contact page.'];
+	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Abdi, a dropout student and a self taught programmer, I do generative art full-time.', `Fell free to follow me on twitter ${aboutMeTwitter} - see contact page.`];
 	seperator();
 	for (var i = 0; i < aboutMeArray.length; i++) {
 		var out = '<span>' + aboutMeArray[i] + '</span><br/>'
@@ -117,7 +124,7 @@ function aboutMe() {
 }
 
 function contactMe() {
-	var contactArray = ['>Contact:', '[Fxhash](https://www.fxhash.xyz/u/Abdi)', '[Objkt](https://objkt.com/profile/reformer)', '[Twitter](https://twitter.com/MDesignsuk)'];
+	var contactArray = ['>Contact:', `[Fxhash](${fxhash})`, `[Objkt](${objkt})`, `[Twitter](${twitter})`];
 	seperator();
 	for (var i = 0; i < contactArray.length; i++) {
 		var out = '<span>' + contactArray[i] + '</span><br/>'
