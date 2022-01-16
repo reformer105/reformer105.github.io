@@ -13,31 +13,31 @@ input.keypress(function (e) {
 		var inputVal = $.trim(input.val());
 		//console.log(inputVal);
 
-		if (inputVal == "help") {
+		if (inputVal == "help" || inputVal == "Help" ) {
 			help();
 			input.val('');
-		} else if (inputVal == "fxhash") {
+		} else if (inputVal == "ping" || inputVal == "Ping") {
 			pong();
 			input.val('');
-		} else if (inputVal == "about") {
+		} else if (inputVal == "about" || inputVal == "About") {
 			aboutMe();
 			input.val('');
-		} else if (inputVal == "contact") {
+		} else if (inputVal == "contact" || inputVal == "Contact") {
 			contactMe();
 			input.val('');
-		} else if (inputVal == "clear") {
+		} else if (inputVal == "clear" || inputVal == "Clear") {
 			clearConsole();
 			input.val('');
-		} else if (inputVal.startsWith("say") === true) {
+		} else if (inputVal.startsWith("say") === true || inputVal.startsWith("Say") === true) {
 			sayThis(inputVal);
 			input.val('');
-		} else if (inputVal.startsWith("sudo") === true) {
+		} else if (inputVal.startsWith("sudo") === true || inputVal.startsWith("Sudo") === true) {
 			sudo(inputVal);
 			input.val('');
-		} else if (inputVal == "time") {
+		} else if (inputVal == "time" || inputVal == "Time") {
 			getTime();
 			input.val('');
-		} else if (inputVal == 'whats that sound' || inputVal == 'what\'s that sound' || inputVal == 'whats that sound?') {
+		} else if (inputVal == 'whats that sound' || inputVal == 'what\'s that sound' || inputVal == 'whats that sound?' || inputVal == 'Whats that sound' || inputVal == 'What\'s that sound' || inputVal == 'Whats that sound?') {
 			seperator();
 			Output('<span class="blue">' + inputVal + '</span></br><span class="red">Machine Broken!</span></br>');
 			seperator();
