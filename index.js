@@ -114,7 +114,7 @@ function getTime() {
 }
 
 function aboutMe() {
-	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Abdi, a dropout student and a self taught programmer, I do generative art full-time.', `Fell free to follow me on twitter ${aboutMeTwitter} - see contact page.`];
+	var aboutMeArray = ['>About:', 'Hi There!', 'I\'m Abdi, a dropout student and a self taught programmer, I make Apps and websites full-time, and Generative arts part-time.', `Fell free to follow me on twitter ${aboutMeTwitter} - Also see contact page for more socials.`];
 	seperator();
 	for (var i = 0; i < aboutMeArray.length; i++) {
 		var out = '<span>' + aboutMeArray[i] + '</span><br/>'
